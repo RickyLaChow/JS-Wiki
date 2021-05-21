@@ -21,18 +21,47 @@
             <input type="text" id="b_ricerca" onkeyup="Ricerca()" placeholder="Cerca..">
         
             <ul id="Ricerca">
-              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace;" onclick="modal()"><a>Variabili</a></li>
-              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace;" onclick="modal()"><a>Test</a></li>
+              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace; cursor: pointer;" onclick="modal()"><a>Variabili</a></li>
+              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace; cursor: pointer;" onclick="modal()"><a>Test</a></li>
     
             </ul>
         </div>
+
         <div class="modal" id="modal">
             <h1 id="titolo_modal" style="font-weight: bold;">Titolo</h1>
+            <div class="dentro_modal">
+                <div class="spiegazione_modal">
+                    <h1>Spiegazione</h1>
+                    <h1 style="font-size: 18px;" id="spiegazione"></h1>
+                </div>
+                <div class="codice_modal">
+                    <h1>Codice</h1>
+                    <h1 style="font-size: 18px;" id="codice"></h1>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="modal2">
+            <h1 id="titolo_modal2" style="font-weight: bold;">Titolo</h1>
             <div class="codice_modal">
-                <h1 style="font-size: 18px;" id="codice"></h1>
+                <h1>Codice</h1>
+                <h1 style="font-size: 18px;" id="codice2"></h1>
             </div>
             <div class="spiegazione_modal">
-                <h1 style="font-size: 18px;" id="spiegazione"></h1>
+                <h1>Spiegazione</h1>
+                <h1 style="font-size: 18px;" id="spiegazione2"></h1>
+            </div>
+        </div>
+
+        <div class="modal" id="modal3">
+            <h1 id="titolo_modal3" style="font-weight: bold;">Titolo</h1>
+            <div class="codice_modal">
+                <h1>Codice</h1>
+                <h1 style="font-size: 18px;" id="codice3"></h1>
+            </div>
+            <div class="spiegazione_modal">
+                <h1>Spiegazione</h1>
+                <h1 style="font-size: 18px;" id="spiegazione3"></h1>
             </div>
         </div>
     </center>
