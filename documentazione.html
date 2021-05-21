@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <center>
+        <div class="nav">
+            <ul class="nav">
+                <li class="nav"><a href="index.html" class="nav">Home</a></li>
+                <li class="nav_attivo""><a href="documentazione.html" class="nav" style="color: black;">Documentazione</a></li>
+                <li class="nav" style="float:right"><a class="nav" href="#about">Login</a></li>
+            </ul>
+        </div>
+    </center>
+    <center>
+        <div class="ricerca">
+            <input type="text" id="b_ricerca" onkeyup="Ricerca()" placeholder="Cerca..">
+        
+            <ul id="Ricerca">
+              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace;" onclick="modal()"><a>Variabili</a></li>
+              <li style="font-size: 16px; font-family:'Courier New', Courier, monospace;" onclick="modal()"><a>Test</a></li>
+    
+            </ul>
+        </div>
+        <div class="modal" id="modal">
+            <h1 id="titolo_modal" style="font-weight: bold;">Titolo</h1>
+            <div class="codice_modal">
+                <h1 style="font-size: 18px;" id="codice"></h1>
+            </div>
+            <div class="spiegazione_modal">
+                <h1 style="font-size: 18px;" id="spiegazione"></h1>
+            </div>
+        </div>
+    </center>
+    </body>
+    <script>
+    
+        function modal(post){
+            const data = {
+            'Variabili': {
+        },
+            'Test': {
+        }
+    }
+        
+        const list = document.querySelector('#Ricerca');
+        var modal = document.getElementById("modal")
+        var titolo_modal = document.getElementById("titolo_modal")
+        var codice_modal = document.getElementById("codice")
+        var spiegazione_modal = document.getElementById("spiegazione")
+        
+            list.addEventListener('click', (evt) => {
+            const selectedText = evt.target.textContent;
+            const codice3 = evt.target.textContent;
+            if (data.hasOwnProperty(selectedText))
+            modal.style = 'display: block';
+            if(selectedText == "Variabili"){
+                titolo_modal.innerHTML = "Titolo Variabili"
+                codice_modal.innerHTML = "Si dichiara con Var nome"
+                spiegazione_modal.innerHTML = "Spiegazione"
+            }
+            else if (selectedText == "Test"){
+                titolo_modal.innerHTML = "Titolo Varieeweqwei"
+            }
+            console.log(data[selectedText]);
+        });
+    }
+    
+    
+        function Ricerca() {
+          let input, filter, ul, li, a, i;
+          input = document.getElementById("b_ricerca");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("Ricerca");
+          li = ul.getElementsByTagName("li");
+        
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+    </html>

@@ -1,0 +1,255 @@
+
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+body{
+    font-family: sans-serif;
+}
+
+div.blocco_tutto{
+    margin-top: 128px;
+    width: 700px;
+}
+
+div.blocco_text{
+    float: left; 
+    height: 150px;
+}
+
+div.blocco_js{
+    margin-top: 32px;
+    height: 150px; 
+    width: 150px; 
+    background-color: rgb(255, 238, 0); 
+    float: right;
+    
+}
+h1.text_js{
+    font-weight: bold; 
+    text-align: end; 
+    padding-right: 10px; 
+    padding-top: 20%; 
+    font-size: 80px;
+}
+
+div.nav{
+    position: sticky;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.nav {
+    float: left;
+}
+
+li.nav_attivo{
+    float: left;
+    background-color: rgb(255, 238, 0); 
+}
+
+li a.nav {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a.nav:hover {
+    background-color: rgba(17, 17, 17, 0.11);
+}
+
+div.blocco_inizio{
+    margin-top: 50px;
+    width: 580px; 
+    background-color: teal;
+}
+
+div.immagine{
+    float: left;
+}
+
+div.testo_button{
+    float: right;
+}
+
+#b_ricerca{
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+  
+#Ricerca{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#Ricerca li a{
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+}
+  
+#Ricerca li a:hover{
+    background-color: #eee;
+}
+
+div.ricerca{
+    float: left;
+    width: 220px;
+    margin: 25px;
+}
+
+div.modal{
+    float: right;
+    width: 980px;
+    margin: 50px;
+    margin-right: 100px;
+    background-color: #F8F8FF;
+    display: none;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+div.codice_modal{
+    float: right;
+    width: 400px;
+}
+
+div.spiegazione_modal{
+    float: left;
+    width: 500px;
+}
