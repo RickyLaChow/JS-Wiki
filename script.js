@@ -22,6 +22,7 @@
         
         const list = document.querySelector('#Ricerca');
 
+        var b_documentazione = document.getElementById("b_documentazione")
         //Modal 1
         var modal = document.getElementById("modal")
         var titolo_modal = document.getElementById("titolo_modal")
@@ -40,6 +41,7 @@
         var codice_modal3 = document.getElementById("codice3")
         var spiegazione_modal3 = document.getElementById("spiegazione3")
         
+            b_documentazione.style = 'display: none;'
             list.addEventListener('click', (evt) => {
             const selectedText = evt.target.textContent;
             if (data.hasOwnProperty(selectedText))

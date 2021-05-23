@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    background-color: wheat;
 }
 
 div.blocco_tutto{
@@ -131,3 +132,60 @@ div.spiegazione_modal{
     padding: 5px;
 }
 
+div.b_div_variabili{
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+    background-color: #ffc93c;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+div.b_div_cicli{
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+    background-color: #ffc93c;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+div.b_div_element{
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+    background-color: #ffc93c;
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+div.b_div_funzioni{
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+    background-color: #ffc93c;
+    width: 670px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+h1.titolo_div_b{
+    font-weight: bold;
+}
+
+footer.footer{
+    background-color: #333;
+    margin-top: 54px;
+    float: right;
+    width: 100%;
+}
+
+footer.footer_index{
+    background-color: #333;
+    margin-top: 25%;
+    float: right;
+    width: 100%;
+}
