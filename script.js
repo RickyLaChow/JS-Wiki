@@ -12,9 +12,11 @@
                 codice3: "const nome = valore;",
                 spiegazione3: "La variabile Const e' un tipo di variabile Costante"
         },
-            'Test': {
-                test: "prova"
-
+            'GetElementById': {
+                titolo: "GetElementById"
+        },
+            'Cicli':{
+                titolo: "Cicli"
         }
     }
         
@@ -57,10 +59,18 @@
                 codice_modal3.innerHTML = data.Variabili.codice3
                 spiegazione_modal3.innerHTML = data.Variabili.spiegazione3
             }
-            else if (selectedText == "Test"){
-                titolo_modal.innerHTML = data.Test.test
+            else if (selectedText == "GetElementById"){
+                modal.style = 'display: block;'
+                titolo_modal.innerHTML = data.GetElementById.titolo
+                codice_modal.innerHTML = data.GetElementById.codice
+                spiegazione_modal.innerHTML
                 modal2.style = 'display: none;'
                 modal3.style = 'dispaly: none;'
+            }
+            else if (selectedText == "Cicli"){
+                modal.style = 'display: block;'
+                modal2.style = 'display: none;'
+                modal3.style = 'display: none;'
             }
             console.log(data[selectedText]);
         });
