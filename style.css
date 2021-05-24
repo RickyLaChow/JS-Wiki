@@ -103,15 +103,16 @@ div.testo_button{
 div.ricerca{
     float: left;
     width: 220px;
-    margin: 25px;
+    margin-top: 24px;
 }
 
 div.modal{
-    width: 1000px;
+    width: 500px;
     margin: 50px;
     margin-left: 200px;
     background-color: #F8F8FF;
     display: none;
+    flex-direction: row;
     padding: 12px;
     border-radius: 20px;
 }
@@ -188,4 +189,10 @@ footer.footer_index{
     margin-top: 25%;
     float: right;
     width: 100%;
+}
+
+div.blocco_doc{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }

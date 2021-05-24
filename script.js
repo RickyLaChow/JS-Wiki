@@ -2,13 +2,13 @@
         function modal(){
             const data = {
             'Variabili': {
-                titolo: "Variabile VAR",
+                titolo: "Dichiarazione Variabile",
                 codice: "var nome = valore;",
                 spiegazione: "Una variabile e' un contenitore <br>dove possiamo imagazzinare un dato",
-                titolo2: "Variabile LET",
+                titolo2: "Variabile (Let)",
                 codice2: "let nome = valore;",
                 spiegazione2: "La variabile let e' un tipo di variabile locale.",
-                titolo3: "Variabile CONST",
+                titolo3: "Variabile (Const)",
                 codice3: "const nome = valore;",
                 spiegazione3: "La variabile Const e' un tipo di variabile Costante"
         },
