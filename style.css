@@ -173,16 +173,13 @@ div.b_div_funzioni{
     border-radius: 4px;
 }
 
-h1.titolo_div_b{
-    font-weight: bold;
-    font-size: 32px;
-}
 
 footer.footer{
     background-color: #333;
     margin-top: 54px;
     float: right;
     width: 100%;
+    height: 220px;
 }
 
 footer.footer_index{
@@ -190,6 +187,7 @@ footer.footer_index{
     margin-top: 25%;
     float: right;
     width: 100%;
+    height: 220px;
 }
 
 div.blocco_doc{
@@ -237,6 +235,15 @@ div.blocco_doc{
     right: 0;
   }
 
-  img.img-b{
-    margin-top: 70px;
-  }
+
+h1.titolo_div_b{
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 60px;
+}
+
+h2.desc_b{
+    font-size: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
