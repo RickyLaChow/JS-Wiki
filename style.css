@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-color: wheat;
+    background-color: #fff9ae;
 }
 
 div.blocco_tutto{
@@ -137,44 +137,45 @@ div.b_div_variabili{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #ffc93c;
+    background-color: #f8ed62;
     width: 320px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 div.b_div_cicli{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #ffc93c;
+    background-color: #f8ed62;
     width: 320px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 div.b_div_element{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #ffc93c;
+    background-color: #f8ed62;
     width: 320px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 div.b_div_funzioni{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #ffc93c;
+    background-color: #f8ed62;
     width: 670px;
     height: 320px;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 h1.titolo_div_b{
     font-weight: bold;
+    font-size: 32px;
 }
 
 footer.footer{
@@ -196,3 +197,46 @@ div.blocco_doc{
     justify-content: center;
     flex-direction: row;
 }
+
+.button {
+    border-radius: 4px;
+    background-color: #e9d700;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  img.img-b{
+    margin-top: 70px;
+  }
