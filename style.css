@@ -194,6 +194,7 @@ footer.footer_index{
 }
 
 div.blocco_doc{
+    margin-top: 24px;
     display: flex;
     justify-content: center;
     flex-direction: row;
