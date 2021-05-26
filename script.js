@@ -21,6 +21,7 @@
     }
         
         const list = document.querySelector('#ricerca');
+        const Var = document.querySelector('#b-variabili')
 
         var b_documentazione = document.getElementById("b_documentazione")
         //Modal 1
@@ -40,24 +41,27 @@
         var titolo_modal3 = document.getElementById("titolo_modal3")
         var codice_modal3 = document.getElementById("codice3")
         var spiegazione_modal3 = document.getElementById("spiegazione3")
-        
-            b_documentazione.style = 'display: none;'
+
+            Var.addEventListener('click', (evento) => {
+                const selectedText = evento.target.textContent;
+                console.log(data[selectedText]);
+            }),
+            b_documentazione.style = 'display: none;';
             list.addEventListener('click', (evt) => {
                 const selectedText = evt.target.textContent;
-                const id = evt.target.getAttribute('id');
-                if(selectedText == "Variabili" || id == "b-variabili"){
+                if(selectedText == "Variabili" ){
 
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.Variabili.titolo
                     codice_modal.innerHTML = data.Variabili.codice
                     spiegazione_modal.innerHTML = data.Variabili.spiegazione
 
-                    modal2.style = 'display: block'
+                    modal2.style = 'display: block;'
                     titolo_modal2.innerHTML = data.Variabili.titolo2
                     codice_modal2.innerHTML = data.Variabili.codice2
                     spiegazione_modal2.innerHTML = data.Variabili.spiegazione2
 
-                    modal3.style = 'display: block'
+                    modal3.style = 'display: block;'
                     titolo_modal3.innerHTML = data.Variabili.titolo3
                     codice_modal3.innerHTML = data.Variabili.codice3
                     spiegazione_modal3.innerHTML = data.Variabili.spiegazione3
