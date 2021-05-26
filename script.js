@@ -49,7 +49,7 @@
             b_documentazione.style = 'display: none;';
             list.addEventListener('click', (evt) => {
                 const selectedText = evt.target.textContent;
-                if(selectedText == "Variabili" ){
+                if(selectedText == "Dichiarazione Variabili"){
 
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.Variabili.titolo
@@ -101,23 +101,15 @@
           }
         }
 
-        function Variabili(){
-            var b_documentazione = document.getElementById("b_documentazione")
-            //Modal 1
-            var modal = document.getElementById("modal")
-            var titolo_modal = document.getElementById("titolo_modal")
-            var codice_modal = document.getElementById("codice")
-            var spiegazione_modal = document.getElementById("spiegazione")
-    
-            //Modal 2
-            var modal2 = document.getElementById("modal2")
-            var titolo_modal2 = document.getElementById("titolo_modal2")
-            var codice_modal2 = document.getElementById("codice2")
-            var spiegazione_modal2 = document.getElementById("spiegazione2")
-    
-            //Modal 3
-            var modal3 = document.getElementById("modal3")
-            var titolo_modal3 = document.getElementById("titolo_modal3")
-            var codice_modal3 = document.getElementById("codice3")
-            var spiegazione_modal3 = document.getElementById("spiegazione3")
+        function indietro(){
+            var b_documentazione = document.getElementById("b_documentazione");
+
+            var modal = document.getElementById("modal");
+            var modal2 = document.getElementById("modal2");
+            var modal3 = document.getElementById("modal3");
+
+            b_documentazione.style.display = 'block';
+            modal.style.display = 'none';
+            modal2.style.display = 'none';
+            modal3.style.display = 'none';
         }

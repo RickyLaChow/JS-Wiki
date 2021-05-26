@@ -83,6 +83,8 @@ div.testo_button{
     font-size: 18px;
     padding: 11px;
     border: 1px solid #ddd;
+    border-radius: 20px;
+    outline:none;
 }
   
 #Ricerca{
@@ -100,6 +102,7 @@ div.testo_button{
   
 #Ricerca li a:hover{
     background-color: #eee;
+    font-weight: bold;    
 }
 
 div.ricerca{
@@ -107,6 +110,8 @@ div.ricerca{
     width: 220px;
     margin-top: 24px;
     background-color: #f8ed62;
+    border-radius: 20px;
+    max-height: 664;
 }
 
 div.modal{
@@ -202,7 +207,7 @@ div.blocco_doc{
 
 .button {
     border-radius: 4px;
-    background-color: #e9d700;
+    background-color: #00587a;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -214,30 +219,30 @@ div.blocco_doc{
     margin: 5px;
   }
   
-  .button span {
+.button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  .button span:after {
+.button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  .button:hover span {
+.button:hover span {
     padding-right: 25px;
-  }
+}
   
-  .button:hover span:after {
+.button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
 
 h1.titolo_div_b{
