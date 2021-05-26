@@ -261,3 +261,13 @@ img.img_footer{
     margin-top: 60px;
     width: 70px;
 }
+
+li.li-cerca{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+li.li-cerca:hover{
+    font-size: 18px;
+}
