@@ -31,12 +31,14 @@ h1.text_js{
 
 div.nav{
     position: sticky;
+
 }
 
 ul.nav {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 4px;
+    font-size: 18px;
     overflow: hidden;
     background-color: #333;
 }
@@ -104,6 +106,7 @@ div.ricerca{
     float: left;
     width: 220px;
     margin-top: 24px;
+    background-color: #f8ed62;
 }
 
 div.modal{
@@ -246,4 +249,14 @@ h2.desc_b{
     font-size: 20px;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+h1.titolo_footer{
+    font-size: 26px;
+    color: gray;
+}
+
+img.img_footer{
+    margin-top: 60px;
+    width: 70px;
 }
