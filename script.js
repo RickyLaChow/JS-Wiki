@@ -47,7 +47,7 @@
             
             list.addEventListener('click', (evt) => {
                 const selectedText = evt.target.textContent;
-                if(selectedText == "Dichiarazione Variabili"){
+                if(selectedText == "Dich. Variabili"){
 
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.Variabili.titolo

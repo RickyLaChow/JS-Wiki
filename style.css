@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-color: #fff9ae;
+    background-color: #F5F5F5;
 }
 
 div.blocco_tutto{
@@ -81,10 +81,11 @@ div.testo_button{
 #b_ricerca{
     width: 100%;
     font-size: 18px;
-    padding: 11px;
+    padding: 12px;
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 16px;
     outline:none;
+    margin-bottom: 0.5px;
 }
   
 #Ricerca{
@@ -97,7 +98,10 @@ div.testo_button{
     padding: 12px;
     text-decoration: none;
     color: black;
-    display: block
+    display: block;
+    border-radius: 5px;
+    margin: 2.8px;
+    background-color: #ced4da;
 }
   
 #Ricerca li a:hover{
@@ -109,7 +113,6 @@ div.ricerca{
     float: left;
     width: 220px;
     margin-top: 24px;
-    background-color: #f8ed62;
     border-radius: 20px;
     max-height: 664;
 }
@@ -145,7 +148,7 @@ div.b_div_variabili{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #f8ed62;
+    background-color: #ffe14c;
     width: 320px;
     height: 320px;
     border-radius: 4px;
@@ -155,7 +158,7 @@ div.b_div_cicli{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #f8ed62;
+    background-color: #ffe14c;
     width: 320px;
     height: 320px;
     border-radius: 4px;
@@ -165,7 +168,7 @@ div.b_div_element{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #f8ed62;
+    background-color: #ffe14c;
     width: 320px;
     height: 320px;
     border-radius: 4px;
@@ -175,7 +178,7 @@ div.b_div_funzioni{
     margin-top: 24px;
     margin-left: 30px;
     float: left;
-    background-color: #f8ed62;
+    background-color: #ffe14c;
     width: 670px;
     height: 320px;
     border-radius: 4px;
@@ -275,4 +278,14 @@ li.li-cerca{
 
 li.li-cerca:hover{
     font-size: 18px;
+}
+
+div.blocco_ricerca{
+    float: left;
+    padding: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 36px;
+    margin-right: -36px;
+    border-radius: 20px;
 }
