@@ -1,25 +1,28 @@
     
-        function modal(){
+
+
+            //Costante che contiene tutti i testi
             const data = {
-            'Variabili': {
-                titolo: "Dichiarazione Variabile",
-                codice: "var nome = valore;",
-                spiegazione: "Una variabile e' un contenitore <br>dove possiamo imagazzinare un dato",
-                titolo2: "Variabile (Let)",
-                codice2: "let nome = valore;",
-                spiegazione2: "La variabile let e' un tipo di variabile locale.",
-                titolo3: "Variabile (Const)",
-                codice3: "const nome = valore;",
-                spiegazione3: "La variabile Const e' un tipo di variabile Costante"
-        },
-            'GetElementById': {
-                titolo: "GetElementById"
-        },
-            'Cicli':{
-                titolo: "Cicli"
-        }
-    }
         
+                'Variabili': {
+                    titolo: "Dichiarazione Variabile",
+                    codice: "var nome = valore;",
+                    spiegazione: "Una variabile e' un contenitore <br>dove possiamo imagazzinare un dato",
+                    titolo2: "Variabile (Let)",
+                    codice2: "let nome = valore;",
+                    spiegazione2: "La variabile let e' un tipo di variabile locale.",
+                    titolo3: "Variabile (Const)",
+                    codice3: "const nome = valore;",
+                    spiegazione3: "La variabile Const e' un tipo di variabile Costante"
+            },
+                'GetElementById': {
+                    titolo: "GetElementById"
+            },
+                'Cicli':{
+                    titolo: "Cicli"
+            }
+        }
+        function modal(){
         const list = document.querySelector('#ricerca');
 
         var b_documentazione = document.getElementById("b_documentazione")
@@ -74,11 +77,28 @@
                 modal2.style = 'display: none;'
                 modal3.style = 'display: none;'
             }
+            else if(selectedText == "Funzioni"){
+
+            }
+            else if(selectedText == "Attributo Style"){
+
+            }
+            else if(SelectedText == "Attributo Value"){
+
+            }
+            else if(SelectedText == "Attributo OnClick"){
+
+            }
+            else if(SelectedText == "ParseInt"){
+
+            }
+            else if(SelectedText == "Attributo Alert"){
+
+            }
             console.log(data[selectedText]);
         });
     }
-    
-    
+
         function Ricerca() {
           let input, filter, ul, li, a, i;
           input = document.getElementById("b_ricerca");
@@ -107,4 +127,61 @@
             modal.style.display = 'none';
             modal2.style.display = 'none';
             modal3.style.display = 'none';
+        }
+
+        function modalButton(){
+            const div_bottoni = document.querySelector('#b_documentazione');
+
+            var b_documentazione = document.getElementById("b_documentazione")
+            //Modal 1
+            var modal = document.getElementById("modal")
+            var titolo_modal = document.getElementById("titolo_modal")
+            var codice_modal = document.getElementById("codice")
+            var spiegazione_modal = document.getElementById("spiegazione")
+    
+            //Modal 2
+            var modal2 = document.getElementById("modal2")
+            var titolo_modal2 = document.getElementById("titolo_modal2")
+            var codice_modal2 = document.getElementById("codice2")
+            var spiegazione_modal2 = document.getElementById("spiegazione2")
+    
+            //Modal 3
+            var modal3 = document.getElementById("modal3")
+            var titolo_modal3 = document.getElementById("titolo_modal3")
+            var codice_modal3 = document.getElementById("codice3")
+            var spiegazione_modal3 = document.getElementById("spiegazione3")
+            b_documentazione.style = 'display: none;';
+
+
+            div_bottoni.addEventListener('click', (evento) => {
+                const Testoselezionato = evento.target.id;
+                if(Testoselezionato == "bottone-variabili"){
+                    modal.style = 'display: block;'
+                    titolo_modal.innerHTML = data.Variabili.titolo
+                    codice_modal.innerHTML = data.Variabili.codice
+                    spiegazione_modal.innerHTML = data.Variabili.spiegazione
+
+                    modal2.style = 'display: block;'
+                    titolo_modal2.innerHTML = data.Variabili.titolo2
+                    codice_modal2.innerHTML = data.Variabili.codice2
+                    spiegazione_modal2.innerHTML = data.Variabili.spiegazione2
+
+                    modal3.style = 'display: block;'
+                    titolo_modal3.innerHTML = data.Variabili.titolo3
+                    codice_modal3.innerHTML = data.Variabili.codice3
+                    spiegazione_modal3.innerHTML = data.Variabili.spiegazione3
+                }
+                else if(Testoselezionato == "bottone-cicli"){
+                    alert("Funzionante");
+                }
+                else if(Testoselezionato == "bottone-elembyid"){
+                    alert("Funzionante");
+                }
+                else if(Testoselezionato == "bottone-funzioni"){
+                    alert("Funzionante");
+                }
+                else if(Testoselezionato == "bottone-altro"){
+                    alert("Funzionante");
+                }
+            });
         }
