@@ -105,7 +105,7 @@ div.testo_button{
     display: block;
     border-radius: 5px;
     margin: 2.8px;
-    background-color: #ced4da;
+    background-color: white;
 }
   
 #Ricerca li a:hover{
@@ -213,7 +213,7 @@ div.blocco_doc{
 
 .button {
     border-radius: 4px;
-    background-color: #00587a;
+    background-color: #0582CA;
     border: none;
     color: #FFFFFF;
     text-align: center;
