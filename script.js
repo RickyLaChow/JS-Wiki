@@ -14,13 +14,31 @@
                     titolo3: "Variabile (Const)",
                     codice3: "const nome = valore;",
                     spiegazione3: "La variabile Const e' un tipo di variabile Costante"
-            },
+                },
                 'GetElementById': {
                     titolo: "GetElementById"
-            },
+                },
                 'Cicli':{
                     titolo: "Cicli"
-            }
+                },
+                'Funzioni':{
+                    titolo: "Funzioni"
+                },
+                'Style':{
+                    titolo: "Attributo Style"
+                },
+                'Value':{
+                    titolo: "Attributo Value"
+                },
+                'OnClick':{
+                    titolo: "Attributo OnClick"
+                },
+                'ParseInt':{
+                    titolo: "ParseInt"
+                },
+                'Alert':{
+                    titolo: "Alert"
+                }
         }
         function modal(){
         const list = document.querySelector('#ricerca');
