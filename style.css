@@ -109,8 +109,7 @@ div.testo_button{
 }
   
 #Ricerca li a:hover{
-    background-color: #eee;
-    font-weight: bold;    
+    background-color: #eee; 
 }
 
 div.ricerca{
@@ -280,20 +279,43 @@ li.li-cerca{
     cursor: pointer;
 }
 
-li.li-cerca:hover{
-    font-size: 18px;
-}
-
 div.blocco_ricerca{
-    float: left;
     padding: 0px;
     padding-top: 0px;
     margin-top: 0px;
-    margin-left: 5%;
-    margin-right: -5%;
     border-radius: 20px;
 }
 
-#Manuale_txt:hover{
-   
+#pulse:hover{
+    animation: pulse 0.5s ease-in infinite;
+  }
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+
+#push:hover{
+    animation: pulse 0.2s linear 1;
+}
+
+@keyframes push{
+    50%  {transform: scale(0.8);}
+}
+
+#pop:hover{
+    animation: pop 0.1s linear 1;
+}
+
+@keyframes pop{
+   20%  {transform: scale(1.2);}
+}
+
+#pop_prolungato:hover{
+    animation: pop 0.5s linear 1;
+    cursor: pointer;
+}
+
+@keyframes pop_prolungato{
+   20%  {transform: scale(1.2);}
 }
