@@ -21,7 +21,6 @@
     }
         
         const list = document.querySelector('#ricerca');
-        const Var = document.querySelector('#b-variabili')
 
         var b_documentazione = document.getElementById("b_documentazione")
         //Modal 1
@@ -41,12 +40,8 @@
         var titolo_modal3 = document.getElementById("titolo_modal3")
         var codice_modal3 = document.getElementById("codice3")
         var spiegazione_modal3 = document.getElementById("spiegazione3")
-
-            Var.addEventListener('click', (evento) => {
-                const selectedText = evento.target.textContent;
-                console.log(data[selectedText]);
-            }),
-            b_documentazione.style = 'display: none;';
+        b_documentazione.style = 'display: none;';
+            
             list.addEventListener('click', (evt) => {
                 const selectedText = evt.target.textContent;
                 if(selectedText == "Dichiarazione Variabili"){
