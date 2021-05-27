@@ -29,6 +29,10 @@ h1.text_js{
     font-size: 80px;
 }
 
+h1.text_js:hover{
+    color:gray;
+}
+
 div.nav{
     position: sticky;
 
@@ -288,4 +292,8 @@ div.blocco_ricerca{
     margin-left: 5%;
     margin-right: -5%;
     border-radius: 20px;
+}
+
+#Manuale_txt:hover{
+   
 }
