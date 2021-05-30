@@ -121,13 +121,13 @@ div.ricerca{
 }
 
 div.modal{
-    width: 820px;
+    width: 880px;
     margin: 50px;
     background-color: #005a8d;
     display: none;
-    flex-direction: row;
     padding: 12px;
     border-radius: 20px;
+    padding-bottom: 54px;
 }
 
 div.codice_modal{
@@ -136,6 +136,7 @@ div.codice_modal{
     width: 400px;
     border-radius: 20px;
     padding: 5px;
+    margin-left: 24px;
 }
 
 div.spiegazione_modal{
@@ -208,6 +209,12 @@ div.blocco_doc{
     display: flex;
     justify-content: center;
     flex-direction: row;
+}
+
+div.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .button {
@@ -324,6 +331,16 @@ div.Indietro{
 }
 
 h1.titolo_modal{
-    font-weight: bold;
-    color: white;
+    color: #ffffff; 
+    font-family: 'Raleway',
+    sans-serif; 
+    font-size: 32px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+div.intestazione_arg{
+    display: none;
 }

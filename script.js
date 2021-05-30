@@ -4,7 +4,8 @@
             //Costante che contiene tutti i testi
             const data = {
                 'Variabili': {
-                    titolo: "Dichiarazione Variabile",
+                    intestazione_arg: "Dichiarazione Variabili",
+                    titolo: "Variabile (Var)",
                     codice: "var nome = valore;",
                     spiegazione: "Una variabile e' un contenitore <br>dove possiamo imagazzinare un dato",
                     titolo2: "Variabile (Let)",
@@ -15,10 +16,14 @@
                     spiegazione3: "La variabile Const e' un tipo di variabile Costante"
                 },
                 'GetElementById': {
-                    titolo: "GetElementById"
+                    titolo: "L'attributo GetElementById.",
+                    spiegazione: "Utilizziamo GetElementById per prendere un elemento a cui poi possiamo cambiare gli stili, il valore, e collegarli a una funzione ",
+                    codice: "var nome = document.getElementById(NomeID)"
                 },
                 'Cicli':{
-                    titolo: "Cicli"
+                    intestazione_arg: "I Cicli",
+                    titolo: "Ciclo for"
+
                 },
                 'Funzioni':{
                     titolo: "Funzioni"
@@ -44,6 +49,8 @@
 
         var b_documentazione = document.getElementById("b_documentazione")
         var indietro = document.getElementById("indietro")
+        var intestazione_argomento = document.getElementById("intestazione_argomento")
+        var h1_arg = document.getElementById("h1_arg")
         //Modal 1
         var modal = document.getElementById("modal")
         var titolo_modal = document.getElementById("titolo_modal")
@@ -61,6 +68,7 @@
         var titolo_modal3 = document.getElementById("titolo_modal3")
         var codice_modal3 = document.getElementById("codice3")
         var spiegazione_modal3 = document.getElementById("spiegazione3")
+        intestazione_argomento.style = 'display: block;';
         indietro.style = 'display: block;';
         b_documentazione.style = 'display: none;';
 
@@ -69,6 +77,7 @@
                 const selectedText = evt.target.textContent;
                 if(selectedText == "Dich. Variabili"){
 
+                    h1_arg.innerHTML = data.Variabili.intestazione_arg
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.Variabili.titolo
                     codice_modal.innerHTML = data.Variabili.codice
@@ -139,6 +148,7 @@
         function indietro(){
             var b_documentazione = document.getElementById("b_documentazione");
             var indietro = document.getElementById("indietro")
+            var intestazione_argomento = document.getElementById("intestazione_argomento")
 
             var modal = document.getElementById("modal");
             var modal2 = document.getElementById("modal2");
@@ -149,12 +159,16 @@
             modal.style.display = 'none';
             modal2.style.display = 'none';
             modal3.style.display = 'none';
+            intestazione_argomento.style = 'display: none;';
         }
 
         function modalButton(){
             const div_bottoni = document.querySelector('#b_documentazione');
 
             var b_documentazione = document.getElementById("b_documentazione")
+            var indietro = document.getElementById("indietro")
+            var intestazione_argomento = document.getElementById("intestazione_argomento")
+            var h1_arg = document.getElementById("h1_arg")
             //Modal 1
             var modal = document.getElementById("modal")
             var titolo_modal = document.getElementById("titolo_modal")
@@ -173,11 +187,13 @@
             var codice_modal3 = document.getElementById("codice3")
             var spiegazione_modal3 = document.getElementById("spiegazione3")
             b_documentazione.style = 'display: none;';
-
+            indietro.style = 'display: block;';
+            intestazione_argomento.style = 'display: block;';
 
             div_bottoni.addEventListener('click', (evento) => {
                 const Testoselezionato = evento.target.id;
                 if(Testoselezionato == "bottone-variabili"){
+                    h1_arg.innerHTML = data.Variabili.intestazione_arg
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.Variabili.titolo
                     codice_modal.innerHTML = data.Variabili.codice
@@ -194,16 +210,22 @@
                     spiegazione_modal3.innerHTML = data.Variabili.spiegazione3
                 }
                 else if(Testoselezionato == "bottone-cicli"){
-                    alert("Funzionante");
+                    modal.style = 'display: block;'
+                    titolo_modal.innerHTML = data.Cicli.titolo
+                    spiegazione_modal.innerHTML = data.Cicli.spiegazione
+                    codice_modal.innerHTML = data.Cicli.codice
                 }
                 else if(Testoselezionato == "bottone-elembyid"){
-                    alert("Funzionante");
+                    modal.style = 'display: block;'
+                    titolo_modal.innerHTML = data.GetElementById.titolo
+                    spiegazione_modal.innerHTML = data.GetElementById.spiegazione
+                    codice_modal.innerHTML = data.GetElementById.codice
                 }
                 else if(Testoselezionato == "bottone-funzioni"){
-                    alert("Funzionante");
+                    modal.style = 'display: block;'
                 }
                 else if(Testoselezionato == "bottone-altro"){
-                    alert("Funzionante");
+                    
                 }
             });
         }
