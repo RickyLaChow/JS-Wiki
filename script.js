@@ -3,7 +3,6 @@
 
             //Costante che contiene tutti i testi
             const data = {
-        
                 'Variabili': {
                     titolo: "Dichiarazione Variabile",
                     codice: "var nome = valore;",
@@ -44,6 +43,7 @@
         const list = document.querySelector('#ricerca');
 
         var b_documentazione = document.getElementById("b_documentazione")
+        var indietro = document.getElementById("indietro")
         //Modal 1
         var modal = document.getElementById("modal")
         var titolo_modal = document.getElementById("titolo_modal")
@@ -61,7 +61,9 @@
         var titolo_modal3 = document.getElementById("titolo_modal3")
         var codice_modal3 = document.getElementById("codice3")
         var spiegazione_modal3 = document.getElementById("spiegazione3")
+        indietro.style = 'display: block;';
         b_documentazione.style = 'display: none;';
+
             
             list.addEventListener('click', (evt) => {
                 const selectedText = evt.target.textContent;
@@ -136,12 +138,14 @@
 
         function indietro(){
             var b_documentazione = document.getElementById("b_documentazione");
+            var indietro = document.getElementById("indietro")
 
             var modal = document.getElementById("modal");
             var modal2 = document.getElementById("modal2");
             var modal3 = document.getElementById("modal3");
 
             b_documentazione.style.display = 'block';
+            indietro.style.display = 'none';
             modal.style.display = 'none';
             modal2.style.display = 'none';
             modal3.style.display = 'none';

@@ -121,10 +121,9 @@ div.ricerca{
 }
 
 div.modal{
-    width: 500px;
+    width: 820px;
     margin: 50px;
-    margin-left: 200px;
-    background-color: #F8F8FF;
+    background-color: #005a8d;
     display: none;
     flex-direction: row;
     padding: 12px;
@@ -318,4 +317,13 @@ div.blocco_ricerca{
 
 @keyframes pop_prolungato{
    20%  {transform: scale(1.2);}
+}
+
+div.Indietro{
+    display: none;
+}
+
+h1.titolo_modal{
+    font-weight: bold;
+    color: white;
 }
