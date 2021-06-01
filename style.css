@@ -344,3 +344,75 @@ h1.titolo_modal{
 div.intestazione_arg{
     display: none;
 }
+
+div.flex_col{
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+div.flex_col_2{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 332px;
+}
+
+div.flex_col_3{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin-top: 240px;
+}
+div.blocco_spiegazioni{
+    width: 300px;
+}
+
+
+h1.titolo_spiegazione{
+    font-family: 'Raleway',
+    sans-serif; 
+    font-size: 26px; 
+    font-weight: 800; 
+    text-align: center; 
+    text-transform: uppercase; 
+    border-radius: 10px;
+    padding-bottom: 4px;
+
+    
+}
+
+h1.desc_spiegazione{
+    margin-top: -100px;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: white;
+}
+
+div.box_spiegazione{
+    width: 300px;
+    margin-right: 14px;
+    background-color: rgb(255, 238, 0); 
+    height: 200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-repeat: round;
+
+
+}
+
+div.sotto_box_spiegazione{
+    margin-top: 24px;
+    background-color: #333;
+    bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 32px;
+}
+
+h1.s_h1{
+    margin: 0;
+    padding: 0;
+    margin-top: -12px;
+    padding-bottom: 16px;
+}
