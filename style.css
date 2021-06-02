@@ -196,14 +196,6 @@ footer.footer{
     height: 220px;
 }
 
-footer.footer_index{
-    background-color: #333;
-    margin-top: 25%;
-    float: right;
-    width: 100%;
-    height: 220px;
-}
-
 div.blocco_doc{
     margin-top: 24px;
     display: flex;
@@ -349,13 +341,15 @@ div.flex_col{
     display: flex;
     flex-direction: row;
     float: left;
+    margin-left: 48px;
 }
 
 div.flex_col_2{
     display: flex;
     flex-direction: column;
     float: left;
-    margin-top: 332px;
+    margin-top: 10%;
+    color: white;
 }
 
 div.flex_col_3{
@@ -364,8 +358,13 @@ div.flex_col_3{
     float: left;
     margin-top: 240px;
 }
+
 div.blocco_spiegazioni{
-    width: 300px;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    
 }
 
 
@@ -391,15 +390,14 @@ h1.desc_spiegazione{
 }
 
 div.box_spiegazione{
+    margin-top: 33%;
     width: 300px;
     margin-right: 14px;
     background-color: rgb(255, 238, 0); 
-    height: 200px;
+    height: 124px;
     padding-top: 24px;
     padding-bottom: 24px;
     background-repeat: round;
-
-
 }
 
 div.sotto_box_spiegazione{
@@ -415,4 +413,40 @@ h1.s_h1{
     padding: 0;
     margin-top: -12px;
     padding-bottom: 16px;
+}
+
+footer.footer_index_2{
+    background-color: #333;
+    margin-top: 64px;
+    float: right;
+    width: 100%;
+    padding: 18px;
+}
+
+h1.titolo_footer_2{
+    font-size: 26px;
+    color: gray;
+}
+
+img.img_footer_2{
+    margin-top: 22px;
+    width: 124px;
+}
+
+footer.footer_index{
+    background-color: #333;
+    margin-top: 364px;
+    float: right;
+    width: 100%;
+    padding: 18px;
+}
+
+div.right_footer{
+    float: right;
+    margin-right: 96px;
+}
+
+div.left_footer{
+    float: left;
+    margin-left: 64px;
 }
