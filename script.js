@@ -6,63 +6,78 @@
                 'Variabili': {
                     intestazione_arg: "Dichiarazione Variabili",
                     titolo: "Variabile (Var)",
-                    codice: "var nome = valore;",
+                    codice: "<b>var</b> nome = valore;",
                     spiegazione: "Una variabile e' un contenitore <br>dove possiamo imagazzinare un dato",
                     titolo2: "Variabile (Let)",
-                    codice2: "let nome = valore;",
+                    codice2: "<b>let</b> nome = valore;",
                     spiegazione2: "La variabile let e' un tipo di variabile locale.",
                     titolo3: "Variabile (Const)",
-                    codice3: "const nome = valore;",
+                    codice3: "<b>const</b> nome = valore;",
                     spiegazione3: "La variabile Const e' un tipo di variabile Costante"
                 },
                 'GetElementById': {
                     intestazione_arg: "L'Attributo GetElementById",
                     titolo: "L'attributo GetElementById.",
                     spiegazione: "Utilizziamo GetElementById per prendere un elemento a cui poi possiamo cambiare gli stili, il valore, e collegarli a una funzione ",
-                    codice: "var nome = document.getElementById(NomeID)"
+                    codice: "var nome = document.<b>getElementById</b>(NomeID)"
                 },
                 'Cicli':{
                     intestazione_arg: "Cicli iterativi",
                     titolo: "Ciclo for",
                     spiegazione: "Il Ciclo for è formato da <br> 1 - Dichiarazione di una Variabile(Contatore)<br> 2 - La Condizione che dev'essere rispettata per avviare il ciclo e ripetuta fin quando non è falsa<br> 3 - Incremento di una Variabile",
-                    codice: "for(i = 0, i < 10, i++){<br>Inserisci le istruzioni<br> che vuoi eseguire<br>}",
+                    codice: "<b>for(i = 0, i < 10, i++)</b>{<br>Inserisci le istruzioni<br> che vuoi eseguire<br>}",
                     titolo2: "Ciclo While",
                     spiegazione2: "Il Ciclo While è formato <br>solamente dalla Condizione, <br>il ciclo inizierà solo se<br> la condizione sarà vera <br>e si fermerà quando essa diverrà falsa. ",
-                    codice2: "while(i > 10){<br>Inserisci le istruzioni<br>che vuoi eseguire<br>}",
+                    codice2: "<b>while(i > 10)</b>{<br>Inserisci le istruzioni<br>che vuoi eseguire<br>}",
                     titolo3: "Ciclo do While",
                     spiegazione3: "Il ciclo do While, ha una particolarità ovvero che il contenuto all'interno di do viene comunque eseguito una volta dopo di che verrà controllata la condizione ",
-                    codice3: "do{<br>Inserisci le Istruzioni<br>che vuoi eseguire<br>}<br>while(x < 10)"
+                    codice3: "<b>do</b>{<br>Inserisci le Istruzioni<br>che vuoi eseguire<br>}<br><b>while(x < 10)</b>"
                 },
                 'Funzioni':{
                     intestazione_arg: "Le Funzioni",
                     titolo: "Funzione",
                     spiegazione: "Una funzione è ciò permette di raggruppare una sequenza di istruzioni in un unico blocco.<br> Per dichiararla utilizziamo la parola chiave 'function' ",
-                    codice: "function Funzione(Parametri){<br>Inserisci le Istruzioni<br> che vuoi eseguire<br>}",
+                    codice: "<b>function Funzione(Parametri)</b>{<br>Inserisci le Istruzioni<br> che vuoi eseguire<br>}",
                     titolo2: "Funzione Ricorsiva",
                     spiegazione2: "Una funzione ricorsiva è ricorsiva quando richiama la funzione stessa all'interno di essa",
-                    codice2: "function Funzione(n){<br>Funzione(n - 1)<br>}"
+                    codice2: "function Funzione(n){<br><b>Funzione(n - 1)</b><br>}"
                     
                 },
                 'Style':{
                     intestazione_arg: "L'Attributo Style",
                     titolo: "Attributo Style",
                     spiegazione: "L'attributo Style possiamo utilizzarlo per assegnare degli stili del codice CSS tramite codice Javascript.",
-                    codice: "variabile = document.getElementById('Id')<br>variabile.style: 'display: block;' "
+                    codice: "variabile = document.getElementById('Id')<br>variabile.<b>style</b>: 'display: block;' "
                 },
                 'Valore':{
                     intestazione_arg: "L'Attributo Value",
                     titolo: "Attributo Value",
                     spiegazione: "Utilizziamo l'attributo Value quando vogliamo prendere il valore per esempio da un elemento HTML",
-                    codice: "variabile = document.getElementById('Id').Value"
+                    codice: "variabile = document.getElementById('Id')<b>.Value</>"
                 },
                 'OnClick':{
-                    titolo: "Attributo OnClick"
+                    intestazione_arg: "L'Attributo OnClick",
+                    titolo: "Attributo OnClick",
+                    spiegazione: "L'attributo onclick lo utilizziamo nel codice HTML, il suo utilizzo è che quando clicchiamo su un determinato oggetto esegue le istruzioni di una funzione.",
+                    codice: "elemHTML <b>onclick='funzione()'</b>"
                 },
-                'ParseInt':{
-                    titolo: "ParseInt"
+                'Prompt':{
+                    intestazione_arg: "L'Attributo Prompt",
+                    titolo: "Prompt",
+                    spiegazione: "Utilizziamo il prompt per mandare una richiesta all'utente come per esempio una Password, la risposta data dall'utente verrà inserita all'interno della variabile Password",
+                    codice: "var Password;<br>Password = <b>Prompt</b>('Inserisci la Password')"
                 },
                 'Alert':{
-                    titolo: "Alert"
+                    intestazione_arg: "L'Attributo Alert",
+                    titolo: "Alert",
+                    spiegazione: "Possiamo Utilizzare Alert per mandare un avviso al nostro utente, all'interno di esso possiamo comunicare un qualsiasi dato",
+                    codice: "var somma = 1 + 2;<br><b>Alert</b>(somma);"
+                },
+                'InnerHTML':{
+                    intestazione_arg: "L'Attributo InnerHTML",
+                    titolo: "InnerHTML",
+                    spiegazione: "Possiamo Utilizzare InnerHTML per cambiare il contenuto di un elemento HTML per esempio un paragrafo.",
+                    codice: "var paragrafo = document.GetElementById('p');<br>paragrafo<b>.InnerHTML</b> = 'Ho cambiato il Contenuto del Paragrafo'"
                 }
         }
         function modal(){
@@ -171,7 +186,7 @@
                 modal2.style = 'display: none;'
                 modal3.style = 'display: none;'
             }
-            else if(SelectedText == "Attributo Value"){
+            else if(selectedText  == "Attributo Value"){
                 h1_arg.innerHTML = data.Valore.intestazione_arg
 
                 modal.style = 'display: block;'
@@ -182,14 +197,50 @@
                 modal2.style = 'display: none;'
                 modal3.style = 'display: none;'
             }
-            else if(SelectedText == "Attributo OnClick"){
+            else if(selectedText  == "Attributo OnClick"){
+                h1_arg.innerHTML = data.OnClick.intestazione_arg
+
+                modal.style = 'display: block;'
+                titolo_modal.innerHTML = data.OnClick.titolo
+                codice_modal.innerHTML = data.OnClick.codice
+                spiegazione_modal.innerHTML = data.OnClick.spiegazione
+
+                modal2.style = 'display: none;'
+                modal3.style = 'display: none;'
 
             }
-            else if(SelectedText == "ParseInt"){
+            else if(selectedText  == "Attributo Prompt"){
+                h1_arg.innerHTML = data.Prompt.intestazione_arg
 
+                modal.style = 'display: block;'
+                titolo_modal.innerHTML = data.Prompt.titolo
+                codice_modal.innerHTML = data.Prompt.codice
+                spiegazione_modal.innerHTML = data.Prompt.spiegazione
+
+                modal2.style = 'display: none;'
+                modal3.style = 'display: none;'
             }
-            else if(SelectedText == "Attributo Alert"){
+            else if(selectedText  == "Attributo Alert"){
+                h1_arg.innerHTML = data.Alert.intestazione_arg
 
+                modal.style = 'display: block;'
+                titolo_modal.innerHTML = data.Alert.titolo
+                codice_modal.innerHTML = data.Alert.codice
+                spiegazione_modal.innerHTML = data.Alert.spiegazione
+
+                modal2.style = 'display: none;'
+                modal3.style = 'display: none;'
+            }
+            else if(selectedText == "Attributo InnerHTML"){
+                h1_arg.innerHTML = data.InnerHTML.intestazione_arg
+
+                modal.style = 'display: block;'
+                titolo_modal.innerHTML = data.InnerHTML.titolo
+                codice_modal.innerHTML = data.InnerHTML.codice
+                spiegazione_modal.innerHTML = data.InnerHTML.spiegazione
+
+                modal2.style = 'display: none;'
+                modal3.style = 'display: none;'
             }
             console.log(data[selectedText]);
         });
@@ -297,16 +348,40 @@
                     spiegazione_modal3.innerHTML = data.Cicli.spiegazione3
                 }
                 else if(Testoselezionato == "bottone-elembyid"){
+                    h1_arg.innerHTML = data.GetElementById.intestazione_arg
+
                     modal.style = 'display: block;'
                     titolo_modal.innerHTML = data.GetElementById.titolo
-                    spiegazione_modal.innerHTML = data.GetElementById.spiegazione
                     codice_modal.innerHTML = data.GetElementById.codice
+                    spiegazione_modal.innerHTML
+                    modal2.style = 'display: none;'
+                    modal3.style = 'dispaly: none;'
                 }
                 else if(Testoselezionato == "bottone-funzioni"){
+                    h1_arg.innerHTML = data.Funzioni.intestazione_arg
+
                     modal.style = 'display: block;'
+                    titolo_modal.innerHTML = data.Funzioni.titolo
+                    codice_modal.innerHTML = data.Funzioni.codice
+                    spiegazione_modal.innerHTML = data.Funzioni.spiegazione
+    
+                    modal2.style = 'display: block;'
+                    titolo_modal2.innerHTML = data.Funzioni.titolo2
+                    codice_modal2.innerHTML = data.Funzioni.codice2
+                    spiegazione_modal2.innerHTML = data.Funzioni.spiegazione2
+    
+                    modal3.style = 'display: none;'
                 }
-                else if(Testoselezionato == "bottone-altro"){
-                    
+                else if(Testoselezionato == "bottone-alert"){
+                    h1_arg.innerHTML = data.Alert.intestazione_arg
+
+                    modal.style = 'display: block;'
+                    titolo_modal.innerHTML = data.Alert.titolo
+                    codice_modal.innerHTML = data.Alert.codice
+                    spiegazione_modal.innerHTML = data.Alert.spiegazione
+    
+                    modal2.style = 'display: none;'
+                    modal3.style = 'display: none;'
                 }
             });
         }
